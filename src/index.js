@@ -1,24 +1,38 @@
 import './style.css';
 import homeContentDiv from './modules/home.js';
+import menuContentDiv from './modules/menu.js';
 
-const contentDiv = document.getElementById('content');
-let homeBtn = document.getElementById('home-button');
+(function () {
+    const contentDiv = document.getElementById('content');
+    const homeBtn = document.getElementById('home-button');
+    const menuBtn = document.getElementById('menu-button');
 
-function loadPage(page) {
+    homeBtn.addEventListener('click', openHomePage);
+    menuBtn.addEventListener('click', openMenuPage);
 
-    contentDiv.remove(contentDiv.firstChild);
-    let element = page;
-
-    return element;
-}
-
-homeBtn.addEventListener('click', openHomePage);
-
-contentDiv.appendChild(component());
-
-function openHomePage() {
     loadPage(homeContentDiv());
-}
+
+    function loadPage(page) {
+        clearContentDiv();
+        contentDiv.appendChild(page);
+    }
+
+    function openHomePage() {
+        loadPage(homeContentDiv());
+    }
+
+    function openMenuPage() {
+        loadPage(menuContentDiv());
+    }
+
+    function clearContentDiv() {
+        while (clearContentDiv.firstChild) {
+            clearContentDiv.remove(clearContentDiv.firstChild);
+        }
+    }
+})()
+
+
 
 
 
