@@ -26,8 +26,8 @@ import menuContentDiv from './modules/menu.js';
     }
 
     function clearContentDiv() {
-        while (clearContentDiv.firstChild) {
-            clearContentDiv.remove(clearContentDiv.firstChild);
+        while (contentDiv.firstChild) {
+            contentDiv.removeChild(contentDiv.firstChild);
         }
     }
 })()
