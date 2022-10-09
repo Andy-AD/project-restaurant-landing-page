@@ -1,4 +1,4 @@
-import menuImage from '../images/bon-vivant-qom5MPOER-I-unsplash.jpg';
+import menuImage from '../images/mae-mu-vjVHYlk91Vk-unsplash.jpg';
 
 export default function() {
     const menu = [
