@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }
 
 body {
@@ -27,7 +29,7 @@ body {
 }
 
 .header li {
-    font-size: 20px;
+    font-size: 1.4em;
     padding: 20px 40px;
     border-radius: 10px;
 }
@@ -44,13 +46,15 @@ body {
 #home-content {
     min-height: calc(100vh - 200px);
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    justify-items: baseline;
 }
 
 .home-image-container {
     height: calc(100vh - 200px);
     grid-area: 1 / 1 / -1 / 2;
+    justify-self: center;
 }
 
 .home-image {
@@ -68,12 +72,12 @@ body {
 
 .description h1 {
     margin-bottom: 100px;
-    font-size: 40px;
+    font-size: 2.2em;
     text-align: center;
 }
 
 .description p {
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: center;
 }
 
@@ -81,18 +85,20 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    justify-items: end;
 }
 
 .menu {
     grid-area: 1 / 1 / -1 / 2;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px repeat(auto-fill, 100px);
+    grid-template-rows: 80px repeat(auto-fill, 150px);
 }
 
 .menu-title {
     justify-self: center;
     align-self: start;
+    font-size: 2em;
 }
 .item-container {
     display: grid;
@@ -102,10 +108,12 @@ body {
 
 .item-name {
     grid-area: 1 / 1 / 2 / 2;
+    font-size: 1.5em;
 }
 
 .item-description {
     grid-area: 2 / 1 / -1 / 2;
+    font-size: 1.2em;
 }
 
 .item-price {
@@ -133,10 +141,16 @@ body {
 
 .contact-content>h1 {
     margin: 30px;
+    font-size: 2.2em;
 }
 
 .contact-content>h4 {
-    margin: 10px;
+    margin: 30px 0 20px 0;
+    font-size: 1.5em;
+}
+
+.contact-content>p {
+    letter-spacing: 2px;
 }
 
 footer {
