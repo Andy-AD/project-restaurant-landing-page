@@ -1,7 +1,7 @@
 import './style.css';
 import homeContentDiv from './modules/home.js';
 import menuContentDiv from './modules/menu.js';
-import contactContentDiv from './modules/contact.js'
+import contactContentDiv from './modules/contact.js';
 
 (function () {
     const contentDiv = document.getElementById('content');
