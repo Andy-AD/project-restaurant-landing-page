@@ -4,7 +4,8 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
-        home: './src/modules/home.js'
+        home: './src/modules/home.js',
+        menu: './src/module/menu.js',
     },
     devtool: 'inline-source-map',
     output: {
